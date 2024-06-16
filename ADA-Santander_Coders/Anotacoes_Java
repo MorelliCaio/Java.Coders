@@ -3,3 +3,27 @@
     <> A instalação que alguns apps precisam, é uma instalação de execução </>
     <> Para programar em java, precisamos do JDK (Java development kit) </>
     <> IDE - integrated development Enviroment </>
+    <> Java é uma linguagem fortemente tipada. então sempre precisamos tipar cada variavel </>
+    <> tipos que temos em java = byte, short, int, long, float, double, boolean, char. </>
+        - byte = entre -128 a 127;
+        - short = -32mil a 32mil;
+        - int = -2^31 a 2^31;
+        - long = -2^63 a 2^53;
+        - float e double = para numeros quebrados;
+        - boolean = verdadeiro ou falso;
+        - char = representação de qualquer simbolo;
+        - String = Letras.
+    <> Java entende que a divisão de 1 inteiro, por outro inteiro, o resultado precisa ser inteiro </>
+    <> Tabela Verdade:
+        >> Operador && (And);
+            > True && True = True
+            > True && False = False
+            > False && True = False
+            > False && False = False
+        >> Operador || (OR)
+            > True || True = True
+            > True || False = True
+            > False || True = True
+            > False || False = False
+        >> Operador Ternario (Quando temos 2 operadores possiveis)
+            > Podemos usar para declaração de uma frase no terminal por exemplo. bem parecido com os operadores condicionais, onde SE true, frase 1 : (SE NÃO) frase 2

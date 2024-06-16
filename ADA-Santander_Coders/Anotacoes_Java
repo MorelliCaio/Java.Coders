@@ -27,3 +27,10 @@
             > False || False = False
         >> Operador Ternario (Quando temos 2 operadores possiveis)
             > Podemos usar para declaração de uma frase no terminal por exemplo. bem parecido com os operadores condicionais, onde SE true, frase 1 : (SE NÃO) frase 2
+    <> Podemos manipular os dados de cada variavel </>
+        >> Temos alguns exemplos disso:
+            > toUpperCase = Sera para transformar todas as strings em letras maiusculas
+            > toLowerCase = sera para transformar todas as strings em letras minusculas
+            > length = sera para contabilizar a quantidade de itens dentro de uma variavel (Qualquer delas que seja)
+            > equals = sera para ver se duas variaveis tem valores iguais, e retorna um resultado booleano. e ainda podemos ignorar o caso de uma letra ser maiuscula em uma variavel, e minuscula em outro com o equalsIgnoreCase.
+    <> ISO 8601 = ela vai definir como representar uma data no mundo inteiro. em java, usamos LocalDate, que precisa ser importado (Import java.time.LocalDate; (Que deve ser uma biblioteca(O Java 22 ja importa uma biblioteca automaticamente)))

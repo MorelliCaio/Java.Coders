@@ -50,3 +50,9 @@
     <> Lembrando, indices começa a partir do 0 </>
     <> Maior e menor são baseados em comparação. uma boa maneira de descobrir qual é o numero maior e menor, é começar com o primeiro elemento do array </>
     <> Java é uma linguagem fortemente tipada, então não podemos misturar tipos no mesmo array </>
+    
+>> Definindo funções <<
+
+    <> Sempre numa aplicação java, o ponto de partida sera dentro da função main </>
+    <> Quando fizermos nossa propria função, sera necessario chamar no main </>
+    <> Os nomes das variaveis, só são importantes ser iguais, no mesmo escopo ({}) </>

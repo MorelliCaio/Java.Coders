@@ -5,13 +5,13 @@
     <> IDE - integrated development Enviroment </>
     <> Java é uma linguagem fortemente tipada. então sempre precisamos tipar cada variavel </>
     <> tipos que temos em java = byte, short, int, long, float, double, boolean, char. </>
-        - byte = entre -128 a 127;
-        - short = -32mil a 32mil;
-        - int = -2^31 a 2^31;
-        - long = -2^63 a 2^53;
+        - byte = entre -128 a 127 - 8 bytes;
+        - short = -32768mil a 32767mil - 16 bytes;
+        - int = -2^31 a 2^31 32 bytes;
+        - long = -2^63 a 2^53 64 bytes;
         - float e double = para numeros quebrados;
         - boolean = verdadeiro ou falso;
-        - char = representação de qualquer simbolo;
+        - char = 0 a 65535 - 16 bytes;
         - String = Letras.
     <> Java entende que a divisão de 1 inteiro, por outro inteiro, o resultado precisa ser inteiro </>
     <> Tabela Verdade:
@@ -27,7 +27,7 @@
             > False || False = False
         >> Operador Ternario (Quando temos 2 operadores possiveis)
             > Podemos usar para declaração de uma frase no terminal por exemplo. bem parecido com os operadores condicionais, onde SE true, frase 1 : (SE NÃO) frase 2
-    <> Podemos manipular os dados de cada variavel </>
+    <> Podemos manipular os dados de cada variavel com tipos primitivos </>
         >> Temos alguns exemplos disso:
             > toUpperCase = Sera para transformar todas as strings em letras maiusculas
             > toLowerCase = sera para transformar todas as strings em letras minusculas
@@ -56,3 +56,28 @@
     <> Sempre numa aplicação java, o ponto de partida sera dentro da função main </>
     <> Quando fizermos nossa propria função, sera necessario chamar no main </>
     <> Os nomes das variaveis, só são importantes ser iguais, no mesmo escopo ({}) </>
+
+>> Introdução POO Java <<
+
+    <> Para rodar um projeto em java, precisamos rodar um metodo main, para esse metodo funcionar, ele tem 5 caracteristicas:
+        >> O metodo precisa ser publico 
+        >> Ele precisa ser static
+        >> Não retorne, void
+        >> Precisa ter o nome main
+        >> precisa ter um array strings </>
+
+>> Classes não executaveis <<
+
+    <> Para ter uma packege, precisamos criar a pasta, criar o arquivo dentro dessa pasta, e declarar no cabeçalho que ela faz parte de uma packege. e para ir no main, precisamos importar esse packege pra dentro, com o comando import {Pasta}.{Cachorro} </>
+    
+>> Metodos <<
+
+    <> Usamos para poder dar tipo uma animação, poder interagir, como latir, rolar... </>
+    
+>> Encapsulamento <<
+
+
+    <> Encapsular faria com que nosso objeto fique protegido, e só consegue usar, que for permitido </>
+    <> O metodo get, pode ser interessante para voce poder validar quem estara acessando as partes do meu objeto </>
+    <> Set serve para poder setar, mas tambem posso limitar o acesso de quem seta </>
+    <> Construtores são quem executa a contrução do meu objeto </>

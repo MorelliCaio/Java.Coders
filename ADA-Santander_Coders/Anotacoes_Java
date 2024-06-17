@@ -45,3 +45,8 @@
             > o maior segredo disso esta em como printaremos isso.
                 -> a printagem na tela nessa hora, é a mais importante. usaremos aqui em java assim "(j + "x" + i + "=" + j * i)"
                 -> onde j representara o primeiro numero, os "+" estão ali para ajuntar a declaração da variavel com a string (Que esta entre parentezes), e finalizando com a multiplicação entre o j e o i
+    <> sobre arreys, informação importante. principalmente em Java que é uma linguagem fortemente tipada, não podemos misturar tipos dentro de um array </>
+    <> Numa linguagem fortemente tipada como java, precisamos declarar a quantidade de indices usados. o que não pode ser mudado durante o codigo, apenas quando declarado </>
+    <> Lembrando, indices começa a partir do 0 </>
+    <> Maior e menor são baseados em comparação. uma boa maneira de descobrir qual é o numero maior e menor, é começar com o primeiro elemento do array </>
+    <> Java é uma linguagem fortemente tipada, então não podemos misturar tipos no mesmo array </>

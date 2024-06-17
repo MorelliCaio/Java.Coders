@@ -34,3 +34,14 @@
             > length = sera para contabilizar a quantidade de itens dentro de uma variavel (Qualquer delas que seja)
             > equals = sera para ver se duas variaveis tem valores iguais, e retorna um resultado booleano. e ainda podemos ignorar o caso de uma letra ser maiuscula em uma variavel, e minuscula em outro com o equalsIgnoreCase.
     <> ISO 8601 = ela vai definir como representar uma data no mundo inteiro. em java, usamos LocalDate, que precisa ser importado (Import java.time.LocalDate; (Que deve ser uma biblioteca(O Java 22 ja importa uma biblioteca automaticamente)))
+    <> Podemos usar os laços de repetição para quando precisamos repetir um numero exato de vezes o mesmo codigo </>
+        >> Normalmente usamos um contador para isso, onde ele vai passar por uma serie de verificações, até chegar ao final das verificações que demos como limite. 
+            > Um exemplo de linha de codigo de loop, que acredito que tenha em todas as linguagens de programação, é a "for(int(variavel) i = 1; i <= 100; i++)
+            > No exemplo acima, a variavel i ira contabilizar uma serie de vezes e ser incrementada a cada vez que ela contar.
+        >> Também podemos incluir um laço de repetição dentro do outro.
+            > Como no exemplo ascima contabilizamos até o numero 100, então por que não contabilizarmos isso construindo uma tabuada até o 100?
+            > dentro das chaves do primeiro laço, criamos o segundo com a mesma estrutura, porem com o nome da variavel diferente, contabilizando até 10, e incrementando toda vez que terminar a contagem.
+            > assim, a repetição i, só ira incrementar quando finalizar a contagem j.
+            > o maior segredo disso esta em como printaremos isso.
+                -> a printagem na tela nessa hora, é a mais importante. usaremos aqui em java assim "(j + "x" + i + "=" + j * i)"
+                -> onde j representara o primeiro numero, os "+" estão ali para ajuntar a declaração da variavel com a string (Que esta entre parentezes), e finalizando com a multiplicação entre o j e o i

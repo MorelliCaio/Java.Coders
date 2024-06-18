@@ -1,0 +1,60 @@
+>> Tipos de dados e custos de armazenamentos <<
+
+    <> No SQL temos mais de 20 dados principais, mas nesse curso apenas 4 serão aprofundados </>
+        >> Numeros inteiros  
+        >> Numeros reais
+        >> Campos textuais
+        >> Campo de data (tempo)
+        >> Booleano
+    <> Ver as variações dos tipos de dados na documentação </>
+
+>> Modelagem de entidade <<
+
+    <> Entidades: representação de qualquer elemento que o sistema ou aplicação que esta usando esse abanco precisa ter com as informações que constituem essa coisa que estamos representando. podendo ser uma pessoa, uma matricula... </>
+    <> diagrama de entidade e relacionamento </>
+
+>> Modelagem de relacionamentos <<
+
+    <> Relacionamento 1 para 1 (Um aluno para uma matricula) </>
+    <> 1 para N </>
+    <> Muito pra muitos </>
+
+>> Normalizaçao de dados <<
+
+    <> Formas normais: buscam garantir qualidade dos dados, que eles estejam estaveis </>
+    <> Primeira forma normal: cada atributo deve conter apenas 1 valor correspondente num dado registro (registro é uma coluna) </>
+    <> Segunda forma normal: cada elemento da tabela deve depender da sua chave primaria (reduz redundancia) </>
+    <> Terceira forma normal: Um elemento não chave da tabela, não pode depender de outro elemento não chave </>
+    
+>> Inserindo tabelas no banco de dados <<
+
+    <> Existem 2 maneiras de criar uma tabela no postigres: </>
+        >> 1 - indo em table, botão direito, create, e adicionando tudo que é necessario por ali, atraves da interface grafica.
+        >> 2 - por "codigo", abrindo logo o SQL para escrver a forma de cada item da tabela em formato de codigo.
+
+>> Inserindo dados no banco <<
+
+    <> para copiar um arquivo csv para SQL, precisamos mostrar em comando para qual abela vai (copy [nome da tabela](chaves separadas por virgulas)); depois, diremos qual o endereço do csv que queremos puxar em nosso computador (from [caminho do arquivo]); depois delimitaremos a forma que cada coluna esta separada (delimiter '[forma de separação]'); e se precisar retirar a primeira linha do csv por ser o nome de chaves (csv header </>)
+    <> para inserir um dado na tabela (insert into [nome da tabela] values)
+    e entre parenteses passar cada parte dos dados a ser inseridos separada por virgula (1, 'portugues', 'literatura e gramatica') e pelo que entendi, quando é um tipo de dado em texto "string" é necessario uso das aspas simples (' ')
+    </>
+    <> e se eu quiser inserir mais de uma linha de uma vez escrevendo, preciso separar cada linha por virgula, e usar o ; para finalizar a chamada de dados. Ex: (2, 'matematica', 'algebra e geometria"), (3, fisica','cinematica e dinamica'); </>
+
+>> Edutando e removendo dados <<
+
+    <> Sempre que eu vou editar ou deletar dados, preciso filtrar a informação para que não edite nem delete a tabela inteira </>
+    <> para editar um item da tabela (update [nome da tabela] set nome = {nome atualizado})
+    e para filtrar a informação nova (where [id_tabela] = [id da tabela]) </>
+    <> para deletar um item da tebela, segue-se o mesmo principio da edição (delete from [nome da tabela]), e para filtrar (where [id_tabela]=[id da tabela]) </>
+
+>> Permissionamento e Views <<
+
+    <> Dados é uma questão muito importante, e muito perigoso. o vasamento de dados gera uma multa muito grande atraves da lei LGPD, e tem como montar um jeito de limitar o acesso dos dados </>
+    <> Podemos privar acesso de tabelas sensiveis com permissionamento, e outro caminho é criar visualizações, onde todas as pessoas tem acesso, mas não nos dados sensiveis </>
+
+>> Índices <<
+
+    <> é uma estrategia para otimizar a busca. ele vai organizar inteligentemente todos os dados e tipos de dados </>
+    <> A base do indice é a base de arvore binaria </> 
+    <> Código para criar um indice (create index [nome do indice] on [nome da tabela(nome da chave)]) </>
+    <> O indice não é uma bala de prata pra quando se inserta informação demais o tempo inteiro </>
